@@ -1,0 +1,45 @@
+{
+    "name": "Easy3DMaker",
+    "version": 2,
+    "inherits": "fdmprinter",
+    "metadata":
+    {
+        "author": "Venator",
+        "manufacturer": "3DFactories",
+        "file_formats": "text/x-gcode",
+        "visible": true,
+        "machine_extruder_trains":
+        {
+            "0": "easy3dmaker_extruder_0"
+        },
+        "supports_usb_connection": true
+    },
+    
+    "overrides": {
+        "machine_name": { "default_value": "Easy3DMaker" },
+        "machine_heated_bed": {
+            "default_value": true
+        },
+        "material_diameter":{
+            "default_value": 1.75
+        },
+        "machine_width": {
+            "default_value": 200
+        },
+        "machine_height": {
+            "default_value": 230
+        },
+        "machine_depth": {
+            "default_value": 200
+        },
+        "machine_center_is_zero": {
+            "default_value": false
+        },
+        "gantry_height": {
+            "default_value": 55
+        },
+        "machine_gcode_flavor": {
+            "default_value": "RepRap (Marlin/Sprinter)"
+        }
+    }
+}
