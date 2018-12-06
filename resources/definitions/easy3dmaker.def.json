@@ -8,6 +8,7 @@
         "manufacturer": "3DFactories",
         "file_formats": "text/x-gcode",
         "visible": true,
+        "has_machine_quality": true,
         "machine_extruder_trains":
         {
             "0": "easy3dmaker_extruder_0"
@@ -16,13 +17,9 @@
     },
     
     "overrides": {
-        "machine_name": { "default_value": "Easy3DMaker" },
-        "machine_heated_bed": {
-            "default_value": true
-        },
-        "material_diameter":{
-            "default_value": 1.75
-        },
+        "machine_name":                         { "default_value": "Easy3DMaker" },
+        "machine_heated_bed":                   { "default_value": true},
+        "material_diameter":                    { "default_value": 1.75},
         "machine_width": {
             "default_value": 200
         },
@@ -38,8 +35,9 @@
         "gantry_height": {
             "default_value": 55
         },
-        "machine_gcode_flavor": {
-            "default_value": "RepRap (Marlin/Sprinter)"
-        }
+        "machine_gcode_flavor" :                {"default_value": "RepRap (Marlin/Sprinter)"  },
+        "infill_pattern"       :                {"value": "'gyroid'" },
+        "infill_sparse_density":                { "default_value": 90 },
+        "gradual_infill_steps" :                { "default_value": 2 }
     }
 }
